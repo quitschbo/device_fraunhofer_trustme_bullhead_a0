@@ -67,6 +67,9 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     gps.msm8992
 
+
+PRODUCT_RESTRICT_VENDOR_FILES := true
+
 # include binary blobs
 $(call inherit-product-if-exists, vendor/lge/bullhead/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/lge/bullhead/bullhead-vendor.mk)
